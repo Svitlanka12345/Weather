@@ -1,0 +1,47 @@
+.search {
+  display: block;
+  margin: 20px 0px;
+}
+.weather-container {
+  margin: 20px 0;
+  max-width: 700px;
+  padding: 10px 10px 10px;
+  border: 1px #ced4da solid;
+  border-radius: 6px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+#currentTime {
+  font-size: 30px;
+}
+#currentDate,
+#currentDay,
+#citylocation,
+#weatherDetails {
+  font-size: 12px;
+}
+#currentCity {
+  font-size: 30px;
+}
+#currentTemp {
+  font-size: 50px;
+}
+
+#yesterday,
+#today,
+#tomorrow,
+#aftertomorrow,
+#dayaftertomorrow {
+  font-size: 12px;
+}
+#yesterdayDayTemp,
+#yesterdayNightTemp,
+#todayDayTemp,
+#todayNightTemp,
+#tomorrowDayTemp,
+#tomorrowNightTemp,
+#aftertomorrowDayTemp,
+#aftertomorrowNightTemp,
+#dayaftertomorrowDayTemp,
+#dayaftertomorrowNightTemp {
+  font-size: 20px;
+}

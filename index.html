@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Wireframe</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="weather" class="weather-container">
+        <div class="row">
+          <div class="col-6">
+            <form class="search-form" id="search-form">
+              <input
+                type="search"
+                id="search-input"
+                placeholder="Type your city here"
+                class="form-control shadow-sm"
+                autofocus="on"
+                autocomplete="off"
+              />
+            </div>          
+          <div class="col-3">
+            <input type="submit" value="Search" class="form-control btn
+            btn-primary shadow-sm w-100" / >
+          </div>        
+        </form>
+          <div class="col-3">
+            <button
+              class="form-control btn btn-success w-100"
+              id="current-location-button"
+            >
+              Current Location
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div id="currentTime">16:41</div>
+            <div id="currentDate">2022-10-20</div>
+            <div id="currentDay">Thursday</div>
+          </div>
+          <div class="col">
+            <div id="currentCity">Gdansk</div>
+          </div>
+          <div class="col">
+            <div id="currentTemp">17°C</div>
+            <!--<span class="units">
+              <a href="#" id="celsius">°C</a>
+              <a href="#" id="fahrenheit">°F</a>
+            </span>-->
+          </div>
+          <div class="col">
+            <div id="pressure">Pressure: 1000 MPa</div>
+            <div id="humidity">Humidity: 86%</div>
+            <div id="windSpeed">Wind: 7km/h</div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <div id="yesterdayDate">2022-10-19</div>
+            <div id="yesterday">Wednesday</div>
+            <div id="yesterdayDayTemp">15°C</div>
+            <div id="yesterdayNightTemp">10°C</div>
+          </div>
+          <div class="col">
+            <div id="todayDate">2022-10-20</div>
+            <div id="today">Thursday</div>
+            <div id="todayDayTemp">14°C</div>
+            <div id="todayNightTemp">10°C</div>
+          </div>
+          <div class="col">
+            <div id="tomorrowDate">2022-10-21</div>
+            <div id="tomorrow">Friday</div>
+            <div id="tomorrowDayTemp">14°C</div>
+            <div id="tomorrowNightTemp">9°C</div>
+          </div>
+          <div class="col">
+            <div id="aftertomorrowDate">2022-10-22</div>
+            <div id="aftertomorrow">Saturday</div>
+            <div id="aftertomorrowDayTemp">15°C</div>
+            <div id="aftertomorrowNightTemp">12°C</div>
+          </div>
+          <div class="col">
+            <div id="dayaftertomorrowDate">2022-10-23</div>
+            <div id="dayaftertomorrow">Friday</div>
+            <div id="dayaftertomorrowDayTemp">17°C</div>
+            <div id="dayaftertomorrowNightTemp">7°C</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
